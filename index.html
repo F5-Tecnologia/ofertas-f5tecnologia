@@ -450,7 +450,7 @@
           e.preventDefault();
           const plano = btn.getAttribute("data-plano");
           if (plano) {
-            selectedPlanMessage = `Olá! gostaria de saber mais sobre o plano ${plano} da SKY.`;
+            selectedPlanMessage = `Olá! gostaria de saber mais sobre o plano ${plano} da SKY. {LP}`;
           } else {
             selectedPlanMessage = null;
           }
@@ -491,7 +491,7 @@
         } else {
           const text = encodeURIComponent(
             selectedPlanMessage ||
-              "Olá! gostaria de saber mais sobre os planos SKY."
+              "Olá! gostaria de saber mais sobre os planos SKY. {LP}"
           );
           whatsBtn.setAttribute("target", "_blank");
           return gtag_report_conversion(
