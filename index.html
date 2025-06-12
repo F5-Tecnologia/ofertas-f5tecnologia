@@ -494,10 +494,10 @@
               "Olá! gostaria de saber mais sobre os planos SKY."
           );
           whatsBtn.setAttribute("target", "_blank");
-          whatsBtn.href = `https://wa.me/${phoneNumber}?text=${text}`;
           return gtag_report_conversion(
             "https://wa.me/${phoneNumber}?text=${text}"
           );
+          whatsBtn.href = `https://wa.me/${phoneNumber}?text=${text}`;
         }
       });
 
